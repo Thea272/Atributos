@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Chango&family=Fontdiner+Swanky&display=swap');
+
+
+body {
+    width: 80%;
+    background-color: aliceblue;
+    margin: 0 auto;
+    /* text-align: center; */
+    font-family: "Nunito", sans-serif;
+    letter-spacing: 0.5px;
+}
+
+p {
+    text-align: left;  }
+
+button {
+    font-variant: small-caps;
+    color: darkred;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 5px;
+    border: 2px solid darkred;
+    background-color: white;
+    border-radius: 5px;  }
+
+
+.uno:hover {
+    cursor: pointer;
+    content: text('#section1'); 
+    text-align: none;
+    background-color: darkred;
+    color: white;
+}
+
+.dos:hover {
+    cursor: pointer;
+    content: text('#section2'); 
+    text-align: none;
+    background-color: darkred;
+    color: white;
+}
+
+.tres:hover {
+    cursor: pointer;
+    content: text('#section3'); 
+    text-align: none;
+    background-color: darkred;
+    color: white;
+ }                    
+
+ul {
+    list-style-type: none;  /* Oculta las viñetas estándar */
+}
+
+ul li::before {
+    content: "★ ";       /* Reemplaza la viñeta con un símbolo */
+    color: #f4a261;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;    }
+
+ul li:hover::before {
+    color: #2a9d8f;     /* Nuevo color cuando se pasa el ratón */
+    font-size: 24px;
+    font-weight: bold;    }
+
+   a:hover {
+        text-align: none;  
+        text-decoration: blue;
+        }
+
+a [target='_blank']::after {
+    content: url(../img/open.svg);}
+
+a [target='_blank'] {
+    color: lightseagreen; }
+
+a [target='_blank']:hover {
+    font-weight: bold;
+color: blue;}
+
+a [href^='mailto']::before {
+    content: url(../img/email.svg), text("administracion.bcn@e-gri.com") ;
+
+    
+}
+
+/* margin-top: 2em;   content: url("a"), text("Del blog"); a:hover{ text decoration: underline solid; color: black*/
+   
+    a [href^='telefono']::before {
+        content: url(../img/phone.svg), text("tel:931 998 205");
+    }
+
+    nav {
+        background-color: white;
+        border: 3px solid darkred;
+        width: 90%;
+        padding: 10px;
+        display: block;
+        margin: 0 auto;   
+    }
+    
+
+h1 {
+    color: steelblue;
+    text-shadow: 0 0 0.5px black;
+}
+
+h2 {
+    background-color: darkred;
+    color: white;
+}
+
+h3 {
+    text-align: left;
+    color: steelblue;
+    text-shadow: 0 0 0.5px black;
+}
+ h1, h2, div {
+    text-align: center;
+ }
