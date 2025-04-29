@@ -24,31 +24,14 @@ button {
     border: 2px solid darkred;
     background-color: white;
     border-radius: 5px;  }
+     
+    button:hover{
+        background-color: darkred;
+        color: white;
+    }
 
 
-.uno:hover {
-    cursor: pointer;
-    content: text('#section1'); 
-    text-align: none;
-    background-color: darkred;
-    color: white;
-}
-
-.dos:hover {
-    cursor: pointer;
-    content: text('#section2'); 
-    text-align: none;
-    background-color: darkred;
-    color: white;
-}
-
-.tres:hover {
-    cursor: pointer;
-    content: text('#section3'); 
-    text-align: none;
-    background-color: darkred;
-    color: white;
- }                    
+                   
 
 ul {
     list-style-type: none;  /* Oculta las viñetas estándar */
@@ -68,7 +51,7 @@ ul li:hover::before {
 
    a:hover {
         text-align: none;  
-        text-decoration: blue;
+    
         }
 
 a [target='_blank']::after {
@@ -83,6 +66,7 @@ color: blue;}
 
 a [href^='mailto']::before {
     content: url(../img/email.svg), text("administracion.bcn@e-gri.com") ;
+    text-decoration: none;
 
     
 }
@@ -120,4 +104,8 @@ h3 {
 }
  h1, h2, div {
     text-align: center;
+ }
+
+ a {
+    text-decoration: none;
  }
